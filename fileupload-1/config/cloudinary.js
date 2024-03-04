@@ -1,4 +1,5 @@
-const cloudinary =  require("cloudinary").v2;
+
+const cloudinary = require("cloudinary").v2;
 
 
 // server data to media server then deletes data from server 
@@ -12,6 +13,5 @@ exports.cloudinaryConnect=()=>{
     }
     catch(error){
         console.log(error);
-
     }
 }

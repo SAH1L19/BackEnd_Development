@@ -13,8 +13,11 @@ const fileUpload = require("express-fileupload");
 
 //mounting 
 app.use(fileUpload({
-    useTempFile:true,
+    useTempFiles: true,
+    tempFileDir: '/tmp/'
 }));
+
+
 app.use(express.json());
 
 
